@@ -12,5 +12,5 @@
 --
 
 create user magesticd with encrypted password 'magesticd';
-create database magesticd with owner MagestiCD encoding UTF8;
+create database magesticd with owner magesticd encoding 'UTF8';
 grant all privileges on database magesticd to magesticd;
