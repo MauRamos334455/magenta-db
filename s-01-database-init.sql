@@ -11,6 +11,10 @@
 -- Description : User and database creation
 --
 
+-- With postgres user
 create user magesticd with encrypted password 'magesticd';
 create database magesticd with owner magesticd encoding 'UTF8';
 grant all privileges on database magesticd to magesticd;
+
+-- Change user for next scripts
+\c magesticd magesticd
