@@ -150,7 +150,7 @@ INSERT INTO FACULTY (FACULTY_ID, NAME)
 VALUES
   (
     NEXTVAL('FACULTY_SEQ'),
-    'Instituo de Energías Renovables'
+    'Instituto de Energías Renovables'
   ); 
 INSERT INTO FACULTY (FACULTY_ID, NAME)
 VALUES
@@ -163,14 +163,14 @@ INSERT INTO FACULTY (FACULTY_ID, NAME)
 VALUES
   (
     NEXTVAL('FACULTY_SEQ'),
-    'Escuela Nacional de Estudios Superiores,Unidad Mérida'
+    'Escuela Nacional de Estudios Superiores, Unidad Mérida'
   ); 
 
 INSERT INTO FACULTY (FACULTY_ID, NAME)
 VALUES
   (
     NEXTVAL('FACULTY_SEQ'),
-    'Escuela Nacional de Estudios Superiores,Unidad Morelia'
+    'Escuela Nacional de Estudios Superiores, Unidad Morelia'
   );
 
 INSERT INTO FACULTY (FACULTY_ID, NAME)

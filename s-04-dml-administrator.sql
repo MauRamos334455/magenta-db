@@ -36,7 +36,7 @@ VALUES
     'Galindo',
     'M.E.M.',
     'F',
-    'C'
+    'O'
   ); 
 
 -- C (Coordinador)
@@ -49,7 +49,7 @@ VALUES
     'Domínguez',
     'M. en I.',
     'M',
-    'O'
+    'C'
   ); 
 INSERT INTO ADMINISTRATOR (ADMINISTRATOR_ID, NAME, LAST_NAME,MOTHERS_LAST_NAME,DEGREE,GENDER,JOB)
 VALUES
@@ -60,7 +60,7 @@ VALUES
     'Nieto',
     'Dra.',
     'F',
-    'O'
+    'C'
   ); 
 
 INSERT INTO ADMINISTRATOR (ADMINISTRATOR_ID, NAME, LAST_NAME,MOTHERS_LAST_NAME,DEGREE,GENDER,JOB)
@@ -72,7 +72,7 @@ VALUES
     'Valverde',
     'Lic.',
     'F',
-    'O'
+    'C'
   ); 
 INSERT INTO ADMINISTRATOR (ADMINISTRATOR_ID, NAME, LAST_NAME,MOTHERS_LAST_NAME,DEGREE,GENDER,JOB)
 VALUES
@@ -83,7 +83,7 @@ VALUES
     'Salazar',
     'Mtra.',
     'F',
-    'O'
+    'C'
   ); 
 INSERT INTO ADMINISTRATOR (ADMINISTRATOR_ID, NAME, LAST_NAME,MOTHERS_LAST_NAME,DEGREE,GENDER,JOB)
 VALUES
@@ -94,6 +94,6 @@ VALUES
     'Alavez',
     'Mtra.',
     'F',
-    'O'
+    'C'
   ); 
                   

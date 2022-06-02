@@ -5,17 +5,8 @@ INSERT INTO
 VALUES
   (
     NEXTVAL('CATEGORY_SEQ'),
-    'Ninguna',
-    ''
-  );
-
-INSERT INTO
-  CATEGORY (CATEGORY_ID, NAME, ABBREVIATION)
-VALUES
-  (
-    NEXTVAL('CATEGORY_SEQ'),
     'Administrativo',
-    'Adm'
+    'ADM'
   );
 
 INSERT INTO
