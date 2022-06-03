@@ -15,7 +15,7 @@ VALUES
     NEXTVAL('VENUE_SEQ'),
     'CDD Sala de Cómputo',
     16,
-    'Anexo Facultad de Ingeniería, Anexo'
+    'Anexo Facultad de Ingeniería'
   );
 
 INSERT INTO VENUE (VENUE_ID, NAME, CAPACITY, LOCATION)
@@ -24,7 +24,7 @@ VALUES
     NEXTVAL('VENUE_SEQ'),
     'CDD Sala de Cómputo y herramientas en línea',
     30,
-    'Anexo Facultad de Ingeniería,'
+    'Anexo Facultad de Ingeniería'
   );
 
 INSERT INTO VENUE (VENUE_ID, NAME, CAPACITY, LOCATION)
