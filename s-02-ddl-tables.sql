@@ -365,9 +365,9 @@ CREATE TABLE PROFESSOR(
     LAST_NAME            VARCHAR(50)     NOT NULL,
     MOTHERS_LAST_NAME    VARCHAR(50),
     RFC                  VARCHAR(15),
-    WORKER_NUMERIC        VARCHAR(30),
+    WORKER_NUMERIC       VARCHAR(30),
     BIRTHDATE            DATE,
-    PHONE_NUMERIC         VARCHAR(15),
+    PHONE_NUMERIC        VARCHAR(15),
     DEGREE               VARCHAR(40),
     EMAIL                VARCHAR(40),
     GENDER               CHAR(1),
@@ -467,8 +467,8 @@ CREATE TABLE SEMINAR_TOPIC(
 --
 
 CREATE TABLE ACCOUNT(
-    ACCOUNT_ID          NUMERIC(40, 0)   NOT NULL,
-    NAME             VARCHAR(50)     NOT NULL,
+    ACCOUNT_ID       NUMERIC(40, 0)   NOT NULL,
+    NAME             VARCHAR(60)     NOT NULL,
     USERNAME         VARCHAR(40)     NOT NULL,
     PASSWORD         VARCHAR(40)     NOT NULL,
     ADMIN            BOOLEAN         NOT NULL,
