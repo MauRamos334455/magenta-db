@@ -6,7 +6,7 @@ VALUES
     NEXTVAL('USER_SEQ'),
     'Coordinación del Centro de Docencia',
     'CoordCDD',
-    'COORD3#',
+    crypt('COORD3#', gen_salt('bf')),
     true,
     (select department_id from department where abbreviation='CDD')
   );
@@ -17,7 +17,7 @@ VALUES
     NEXTVAL('USER_SEQ'),
     'Gestión y Vinculación',
     'Ges_Vinc',
-    'SuperUsuario1',
+    crypt('SuperUsuario1', gen_salt('bf')),
     true,
     (select department_id from department where abbreviation='GV')
   );
@@ -28,7 +28,7 @@ VALUES
     NEXTVAL('USER_SEQ'),
     'Soporte Area',
     'SoporteArea',
-    'Usuario1#',
+    crypt('Usuario1#', gen_salt('bf')),
     false,
     (select department_id from department where abbreviation='GV')
   );
@@ -39,7 +39,7 @@ VALUES
     NEXTVAL('USER_SEQ'),
     'Invitado Formácion y Desarrollo en Cómputo',
     'InvitadoCO',
-    'Usuario#2COa1',
+    crypt('Usuario#2COa1', gen_salt('bf')),
     false,
     (select department_id from department where abbreviation='CO')
   );
@@ -50,7 +50,7 @@ VALUES
     NEXTVAL('USER_SEQ'),
     'Invitado Área Disciplinar e Investigación Educativa',
     'InvitadoDI',
-    'Usuario#2Dib2',
+    crypt('Usuario#2Dib2', gen_salt('bf')),
     false,
     (select department_id from department where abbreviation='DI')
   );
@@ -61,7 +61,7 @@ VALUES
     NEXTVAL('USER_SEQ'),
     'Invitado Formación en Desarrollo Humano',
     'InvitadoDH',
-    'Usuario#2DHc3',
+    crypt('Usuario#2DHc3', gen_salt('bf')),
     false,
     (select department_id from department where abbreviation='DH')
   );
@@ -72,7 +72,7 @@ VALUES
     NEXTVAL('USER_SEQ'),
     'Invitado Formación y Desarrollo Didáctico Pedagógico',
     'InvitadoDP',
-    'Usuario#2DPd4',
+    crypt('Usuario#2DPd4', gen_salt('bf')),
     false,
     (select department_id from department where abbreviation='DP')
   );

@@ -18,3 +18,7 @@ grant all privileges on database magesticd to magesticd;
 
 -- Change user for next scripts
 \c magesticd magesticd
+
+-- Create extra extensions for libraries
+create extension unaccent;
+create extension pgcrypto;
