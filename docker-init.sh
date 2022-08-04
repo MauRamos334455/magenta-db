@@ -3,11 +3,7 @@
 # Create our container
 docker pull postgres
 
-docker run -e POSTGRES_PASSWORD=postgres \
-  -d \
-  --name magesticd \
-  -p 5432:5432 \
-  postgres
+docker run -e POSTGRES_PASSWORD=postgres -d --name magesticd -p 5432:5432 postgres
 
 # Copy this directory everytime that exists changes in the files 
 # and for the first time.

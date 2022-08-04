@@ -4,15 +4,6 @@ INSERT INTO DEPARTMENT (DEPARTMENT_ID, ABBREVIATION, NAME, ADMINISTRATOR_ID)
 VALUES
   (
     NEXTVAL('DEPARTMENT_SEQ'),
-    'CDD',
-    'Coordinación del Centro de Docencia',
-    3
-  );
-
-INSERT INTO DEPARTMENT (DEPARTMENT_ID, ABBREVIATION, NAME, ADMINISTRATOR_ID)
-VALUES
-  (
-    NEXTVAL('DEPARTMENT_SEQ'),
     'CO',
     'Formación y Desarrollo en Cómputo',
     4
