@@ -1,3 +1,4 @@
+\i ./s-04-dml-diploma.sql
 \i ./s-04-dml-division.sql
 \i ./s-04-dml-career.sql
 \i ./s-04-dml-category.sql
