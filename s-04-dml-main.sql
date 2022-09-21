@@ -1,8 +1,6 @@
 \i ./s-04-dml-diploma.sql
 \i ./s-04-dml-division.sql
-\i ./s-04-dml-career.sql
-\i ./s-04-dml-category.sql
-\i ./s-04-dml-faculty.sql
+\i ./s-04-dml-work-position.sql
 \i ./s-04-dml-administrator.sql
 \i ./s-04-dml-department.sql
 \i ./s-04-dml-account.sql
