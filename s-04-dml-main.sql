@@ -7,3 +7,6 @@
 \i ./s-04-dml-venue.sql
 \i ./s-04-dml-professor.sql
 \i ./s-04-dml-activity_catalogue.sql
+\i ./s-04-dml-activity.sql
+\i ./s-04-dml-instructor.sql
+\i ./s-04-dml-participant.sql
