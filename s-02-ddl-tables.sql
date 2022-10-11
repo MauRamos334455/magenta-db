@@ -59,8 +59,8 @@ CREATE TABLE ACTIVITY(
     YEAR                     INTEGER          NOT NULL,
     NUM                      INTEGER          NOT NULL,
     TYPE                     CHAR(1)          NOT NULL,
-    START_DATE               DATE             NOT NULL,
-    END_DATE                 DATE             NOT NULL,
+    START_TIME               TIME             NOT NULL,
+    END_TIME                 TIME             NOT NULL,
     MANUAL_DATE              VARCHAR(200)     NOT NULL,
     DAYS_WEEK                VARCHAR(9)       NOT NULL,
     CTC                      INTEGER,
@@ -92,7 +92,6 @@ CREATE TABLE ACTIVITY_CATALOGUE(
     NAME                     VARCHAR(300)     NOT NULL,
     HOURS                    INTEGER          NOT NULL,
     TYPE                     CHAR(2)          NOT NULL,
-    INSTITUTION              VARCHAR(10),
     AIMED_AT                 VARCHAR(500),
     OBJECTIVE                VARCHAR(500),
     CONTENT                  VARCHAR(2000),
@@ -103,7 +102,6 @@ CREATE TABLE ACTIVITY_CATALOGUE(
     DIPLOMA_ID               NUMERIC(40, 0),
     CONSTRAINT ACTIVITY_CATALOGUE_PK PRIMARY KEY (ACTIVITY_CATALOGUE_ID),
     CONSTRAINT ACTIVITY_CATALOGUE_TYPE_CHK CHECK (TYPE IN ('CU','CT','TA','SE','FO','EV','DI','CO')),
-    CONSTRAINT ACTIVITY_CATALOGUE_INSTITUTION_CHK CHECK (INSTITUTION = 'DGAPA' OR INSTITUTION = 'CDD')
 )
 ;
 

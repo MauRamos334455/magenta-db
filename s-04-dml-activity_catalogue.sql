@@ -9,7 +9,6 @@ VALUES
     'Salud Emocional',
     8,
     'CT',
-    'CDD',
     '2022-02-05',
     5
   );
@@ -23,7 +22,6 @@ VALUES
     'Access básico',
     15,
     'CT',
-    'CDD',
     '2018-05-18',
     2
   );
@@ -37,7 +35,6 @@ VALUES
     'Access',
     12,
     'CT',
-    'CDD',
     '2018-05-18',
     2
   );
@@ -51,7 +48,6 @@ VALUES
     'Actualización a Office 2007',
     12,
     'CT',
-    'CDD',
     '2018-05-18',
     2
   );
@@ -65,7 +61,6 @@ VALUES
     'La violencia no visible en el aula: Detección e intervención',
     20,
     'CU',
-    'DGAPA',
     '2012-12-12',
     5
   );
@@ -79,7 +74,6 @@ VALUES
     'Comunicación asertiva en el aula. Parte 2',
     20,
     'CU',
-    'DGAPA',
     '2012-12-12',
     5
   );
@@ -93,7 +87,6 @@ VALUES
     'Ecuaciones Diferenciales',
     20,
     'SE',
-    'DGAPA',
     '2018-05-18',
     4
   );
