@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Stop the container
+docker stop magesticd
+
+# Delete previous container
+docker rm magesticd
+
 # Create our container
 docker pull postgres
 
@@ -8,9 +14,6 @@ docker run -e POSTGRES_PASSWORD=postgres -d --name magesticd -p 5432:5432 postgr
 # Copy this directory everytime that exists changes in the files 
 # and for the first time.
 docker cp ../magesticd-db magesticd:/tmp/
-
-# Stop the container
-docker stop magesticd
 
 # start container
 docker start magesticd
