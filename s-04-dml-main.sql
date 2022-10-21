@@ -10,3 +10,4 @@
 \i ./s-04-dml-activity.sql
 \i ./s-04-dml-instructor.sql
 \i ./s-04-dml-participant.sql
+\i ./s-04-dml-activity-evaluation.sql
