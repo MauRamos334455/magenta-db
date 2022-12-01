@@ -1,4 +1,4 @@
-# magesticd-db
+# magestic-db
 Database project for the MAGESTIC system.
 
 Install postgresql 14
