@@ -12,12 +12,12 @@
 --
 
 -- With postgres user
-create user magesticd with encrypted password 'magesticd';
-create database magesticd with owner magesticd encoding 'UTF8';
-grant all privileges on database magesticd to magesticd;
+create user magestic with encrypted password 'magestic';
+create database magestic with owner magestic encoding 'UTF8';
+grant all privileges on database magestic to magestic;
 
 -- Change user for next scripts
-\c magesticd magesticd
+\c magestic magestic
 
 -- Create extra extensions for libraries
 create extension unaccent;
