@@ -18,6 +18,7 @@ docker start ${container}
 
 # Copy this directory everytime that exists changes in the files 
 # and for the first time.
+Start-Sleep -Seconds 1
 docker cp ../source ${container}:/tmp/
 
 
