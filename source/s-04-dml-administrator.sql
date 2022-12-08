@@ -1,99 +1,132 @@
 \qecho ================== INSERTING INTO ADMINISTRATOR ==================
 
--- S (Secretario de apoyo)
-INSERT INTO ADMINISTRATOR (ADMINISTRATOR_ID, NAME, LAST_NAME,MOTHERS_LAST_NAME,DEGREE,GENDER,JOB)
+-- SYSTEM MAINTANANCE ACCOUNT FOR DEVELOPING
+INSERT INTO ADMINISTRATOR (ADMINISTRATOR_ID, NAME, LAST_NAME,
+  DEGREE, GENDER, USERNAME, PASSWORD, ADMIN)
 VALUES
   (
     NEXTVAL('ADMINISTRATOR_SEQ'),
-    'Claudia',
-    'Loreto',
-    'Miranda',
-    'Mtra.',
-    'F',
-    'S'
+    'Mauricio',
+    'Ramos',
+    'Ing.',
+    'M',
+    'mantenimiento_mr',
+    crypt('M4NT3N1M13NT0#', gen_salt('bf')),
+    true
   );
 
--- D (Director)
-INSERT INTO ADMINISTRATOR (ADMINISTRATOR_ID, NAME, LAST_NAME,MOTHERS_LAST_NAME,DEGREE,GENDER,JOB)
+-- SYSTEM MAINTANANCE ACCOUNT FOR DEVELOPING
+INSERT INTO ADMINISTRATOR (ADMINISTRATOR_ID, NAME, LAST_NAME,
+  DEGREE, GENDER, USERNAME, PASSWORD, ADMIN)
 VALUES
   (
     NEXTVAL('ADMINISTRATOR_SEQ'),
-    'Carlos Agustín',
-    'Escalante',
-    'Sandoval',
+    'Carolina',
+    'Kennedy',
+    'Ing.',
+    'F',
+    'mantenimiento_ck',
+    crypt('M4NT3N1M13NT0#', gen_salt('bf')),
+    true
+  );
+
+-- DEPARTMENT BOSS
+INSERT INTO ADMINISTRATOR (ADMINISTRATOR_ID, NAME, LAST_NAME, MOTHERS_LAST_NAME,
+  DEGREE, GENDER, USERNAME, PASSWORD, ADMIN, DEPARTMENT_ID)
+VALUES
+  (
+    NEXTVAL('ADMINISTRATOR_SEQ'),
+    'Josefina',
+    'Pérez',
+    'Vallarta',
+    'Mtra.',
+    'F',
+    'jefe_did',
+    crypt('D3S4RR0LL0#', gen_salt('bf')),
+    true,
+    (select department_id from department where abbreviation='DID')
+  );
+
+-- DEPARTMENT BOSS
+INSERT INTO ADMINISTRATOR (ADMINISTRATOR_ID, NAME, LAST_NAME, MOTHERS_LAST_NAME,
+  DEGREE, GENDER, USERNAME, PASSWORD, ADMIN, DEPARTMENT_ID)
+VALUES
+  (
+    NEXTVAL('ADMINISTRATOR_SEQ'),
+    'Aurelio',
+    'Rodríguez',
+    'Jiménez',
     'Dr.',
     'M',
-    'D'
-  );  
+    'jefe_dsa',
+    crypt('S3RV1C105#', gen_salt('bf')),
+    true,
+    (select department_id from department where abbreviation='DSA')
+  );
 
--- O (Coordinador del CD)
-INSERT INTO ADMINISTRATOR (ADMINISTRATOR_ID, NAME, LAST_NAME,MOTHERS_LAST_NAME,DEGREE,GENDER,JOB)
+-- DEPARTMENT BOSS
+INSERT INTO ADMINISTRATOR (ADMINISTRATOR_ID, NAME, LAST_NAME, MOTHERS_LAST_NAME,
+  DEGREE, GENDER, USERNAME, PASSWORD, ADMIN, DEPARTMENT_ID)
 VALUES
   (
     NEXTVAL('ADMINISTRATOR_SEQ'),
-    'Margarita',
-    'Ramírez',
-    'Galindo',
-    'M.E.M.',
-    'F',
-    'O'
-  ); 
-
--- C (Coordinador)
-INSERT INTO ADMINISTRATOR (ADMINISTRATOR_ID, NAME, LAST_NAME,MOTHERS_LAST_NAME,DEGREE,GENDER,JOB)
-VALUES
-  (
-    NEXTVAL('ADMINISTRATOR_SEQ'),
-    'Gabriel',
-    'López',
-    'Domínguez',
-    'M. en I.',
-    'M',
-    'C'
-  ); 
-INSERT INTO ADMINISTRATOR (ADMINISTRATOR_ID, NAME, LAST_NAME,MOTHERS_LAST_NAME,DEGREE,GENDER,JOB)
-VALUES
-  (
-    NEXTVAL('ADMINISTRATOR_SEQ'),
-    'Martha Rosa',
-    'Del Moral',
-    'Nieto',
+    'Andrea',
+    'Solorzano',
+    'Rosales',
     'Dra.',
     'F',
-    'C'
-  ); 
+    'jefe_dsc',
+    crypt('R3D35#', gen_salt('bf')),
+    true,
+    (select department_id from department where abbreviation='DSC')
+  );
 
-INSERT INTO ADMINISTRATOR (ADMINISTRATOR_ID, NAME, LAST_NAME,MOTHERS_LAST_NAME,DEGREE,GENDER,JOB)
+-- DEPARTMENT BOSS
+INSERT INTO ADMINISTRATOR (ADMINISTRATOR_ID, NAME, LAST_NAME, MOTHERS_LAST_NAME,
+  DEGREE, GENDER, USERNAME, PASSWORD, ADMIN, DEPARTMENT_ID)
 VALUES
   (
     NEXTVAL('ADMINISTRATOR_SEQ'),
-    'Arely',
-    'Hernández',
-    'Valverde',
+    'Santiago',
+    'Juárez',
+    'Mejía',
     'Lic.',
-    'F',
-    'C'
-  ); 
-INSERT INTO ADMINISTRATOR (ADMINISTRATOR_ID, NAME, LAST_NAME,MOTHERS_LAST_NAME,DEGREE,GENDER,JOB)
+    'M',
+    'jefe_dros',
+    crypt('S3RV1D0R35#', gen_salt('bf')),
+    true,
+    (select department_id from department where abbreviation='DROS')
+  );
+
+-- DEPARTMENT BOSS
+INSERT INTO ADMINISTRATOR (ADMINISTRATOR_ID, NAME, LAST_NAME, MOTHERS_LAST_NAME,
+  DEGREE, GENDER, USERNAME, PASSWORD, ADMIN, DEPARTMENT_ID)
 VALUES
   (
     NEXTVAL('ADMINISTRATOR_SEQ'),
-    'María Elena',
-    'Cano',
-    'Salazar',
-    'Mtra.',
+    'Julia',
+    'Trujillo',
+    'Villareal',
+    'Dra.',
     'F',
-    'C'
-  ); 
-INSERT INTO ADMINISTRATOR (ADMINISTRATOR_ID, NAME, LAST_NAME,MOTHERS_LAST_NAME,DEGREE,GENDER,JOB)
+    'jefe_dp',
+    crypt('P3D4G0G14#', gen_salt('bf')),
+    true,
+    (select department_id from department where abbreviation='DP')
+  );
+
+-- DEPARTMENT USER ACCOUNT
+INSERT INTO ADMINISTRATOR (ADMINISTRATOR_ID, NAME, LAST_NAME, MOTHERS_LAST_NAME,
+  GENDER, USERNAME, PASSWORD, ADMIN, DEPARTMENT_ID)
 VALUES
   (
     NEXTVAL('ADMINISTRATOR_SEQ'),
-    'Jacquelyn',
-    'Martínez',
-    'Alavez',
-    'Mtra.',
-    'F',
-    'C'
-  ); 
-                  
+    'Aurelio',
+    'Domínguez',
+    'Peralta',
+    'M',
+    'staff_did',
+    crypt('D3S4RR0LL0_ST#', gen_salt('bf')),
+    false,
+    (select department_id from department where abbreviation='DID')
+  );
