@@ -1,26 +1,24 @@
-$container = "magestic"
+$container = "magestic-db"
 $pg_password = "postgres"
 $host_port = 5432
 $container_port = 5432
 
+Write-Output "Stopping the container..."
 docker stop ${container}
 
-# Delete previous container
+Write-Output "Deleting previous container..."
 docker rm ${container}
 
-# Create our container
-docker pull postgres
+Write-Output "Creating our container..."
+# Execute script inside scripts folder or change $PWD
+docker run -e POSTGRES_PASSWORD=${pg_password} -d --name ${container} -p ${OutpWrite-Output_port}:${container_port} -v ${PWD}/../source:/tmp/source postgres:latest
 
-docker run -e POSTGRES_PASSWORD=${pg_password} -d --name ${container} -p ${host_port}:${container_port} postgres
-
-# start container
+Write-Output "Starting container..."
 docker start ${container}
 
 # Copy this directory everytime that exists changes in the files 
 # and for the first time.
-Start-Sleep -Seconds 1
-docker cp ../source ${container}:/tmp/
+Start-Sleep -Seconds 3
 
-
-# Access to psql in the container
+Write-Output "Executing container..."
 docker exec -it -u postgres -w /tmp/source ${container} psql
