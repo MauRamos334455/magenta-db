@@ -1,24 +1,25 @@
 #!/bin/bash
 
-# Stop the container
+CONTAINER="magestic-db"
+PG_PASSWORD="postgres"
+HOST_PORT="5432"
+CONTAINER_PORT="5432"
+
+echo Stopping the container...
 docker stop magestic
 
-# Delete previous container
+echo Dropping previous container...
 docker rm magestic
 
-# Create our container
-docker pull postgres
+echo Creating new container...
+docker run -e POSTGRES_PASSWORD=${PG_PASSWORD} -d --name ${CONTAINER} -p ${HOST_PORT}:${CONTAINER_PORT} -v ${PWD}/../source:/tmp/source postgres:latest
 
-docker run -e POSTGRES_PASSWORD=postgres -d --name magestic -p 5432:5432 postgres
-
-# Copy this directory everytime that exists changes in the files 
-# and for the first time.
-docker cp ../magestic-db magestic:/tmp/
-
-# start container
+echo Starting container...
 docker start magestic
 
-# Access to psql in the container
+sleep 3
+
+echo Executing container...
 docker exec -it -u postgres -w /tmp/magestic-db magestic psql
 
 # Don't forget to change user to magesticd on psql if is not your first time
