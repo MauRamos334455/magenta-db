@@ -898,3 +898,229 @@ VALUES
     1,
     20
   );
+
+
+-- ACTIVITY CATALOGUE ID: 21
+INSERT INTO
+  ACTIVITY (ACTIVITY_ID, YEAR, NUM, TYPE, START_TIME, END_TIME, MANUAL_DATE,
+            DAYS_WEEK, CTC, COST, MAX_QUOTA, MIN_QUOTA, VENUE_ID,
+            ACTIVITY_CATALOGUE_ID)
+VALUES
+  (
+    NEXTVAL('ACTIVITY_SEQ'),
+    2022,
+    1,
+    's',
+    '13:00',
+    '15:00',
+    'Los días 5, 7, 9 y 10 de Agosto',
+    'LIVS',
+    80,
+    200.00,
+    15,
+    5,
+    1,
+    21
+  );
+
+INSERT INTO
+  ACTIVITY (ACTIVITY_ID, YEAR, NUM, TYPE, START_TIME, END_TIME, MANUAL_DATE,
+            DAYS_WEEK, CTC, COST, MAX_QUOTA, MIN_QUOTA, VENUE_ID,
+            ACTIVITY_CATALOGUE_ID)
+VALUES
+  (
+    NEXTVAL('ACTIVITY_SEQ'),
+    2023,
+    1,
+    's',
+    '13:00',
+    '15:00',
+    'Los días 5, 7, 9 y 10 de Agosto',
+    'LIVS',
+    80,
+    200.00,
+    15,
+    5,
+    1,
+    21
+  );
+
+-- ACTIVITY CATALOGUE ID: 22
+INSERT INTO
+  ACTIVITY (ACTIVITY_ID, YEAR, NUM, TYPE, START_TIME, END_TIME, MANUAL_DATE,
+            DAYS_WEEK, CTC, COST, MAX_QUOTA, MIN_QUOTA, VENUE_ID,
+            ACTIVITY_CATALOGUE_ID)
+VALUES
+  (
+    NEXTVAL('ACTIVITY_SEQ'),
+    2022,
+    1,
+    'i',
+    '13:00',
+    '15:00',
+    'Los días 5, 7, 9 y 10 de Agosto',
+    'LIVS',
+    80,
+    200.00,
+    15,
+    5,
+    1,
+    22
+  );
+
+INSERT INTO
+  ACTIVITY (ACTIVITY_ID, YEAR, NUM, TYPE, START_TIME, END_TIME, MANUAL_DATE,
+            DAYS_WEEK, CTC, COST, MAX_QUOTA, MIN_QUOTA, VENUE_ID,
+            ACTIVITY_CATALOGUE_ID)
+VALUES
+  (
+    NEXTVAL('ACTIVITY_SEQ'),
+    2023,
+    1,
+    'i',
+    '13:00',
+    '15:00',
+    'Los días 5, 7, 9 y 10 de Agosto',
+    'LIVS',
+    80,
+    200.00,
+    15,
+    5,
+    1,
+    22
+  );
+
+-- ACTIVITY CATALOGUE ID: 23
+INSERT INTO
+  ACTIVITY (ACTIVITY_ID, YEAR, NUM, TYPE, START_TIME, END_TIME, MANUAL_DATE,
+            DAYS_WEEK, CTC, COST, MAX_QUOTA, MIN_QUOTA, VENUE_ID,
+            ACTIVITY_CATALOGUE_ID)
+VALUES
+  (
+    NEXTVAL('ACTIVITY_SEQ'),
+    2022,
+    2,
+    's',
+    '13:00',
+    '15:00',
+    'Los días 5, 7, 9 y 10 de Agosto',
+    'LIVS',
+    80,
+    200.00,
+    15,
+    5,
+    1,
+    23
+  );
+
+INSERT INTO
+  ACTIVITY (ACTIVITY_ID, YEAR, NUM, TYPE, START_TIME, END_TIME, MANUAL_DATE,
+            DAYS_WEEK, CTC, COST, MAX_QUOTA, MIN_QUOTA, VENUE_ID,
+            ACTIVITY_CATALOGUE_ID)
+VALUES
+  (
+    NEXTVAL('ACTIVITY_SEQ'),
+    2023,
+    2,
+    's',
+    '13:00',
+    '15:00',
+    'Los días 5, 7, 9 y 10 de Agosto',
+    'LIVS',
+    80,
+    200.00,
+    15,
+    5,
+    1,
+    23
+  );
+
+-- ACTIVITY CATALOGUE ID: 24
+INSERT INTO
+  ACTIVITY (ACTIVITY_ID, YEAR, NUM, TYPE, START_TIME, END_TIME, MANUAL_DATE,
+            DAYS_WEEK, CTC, COST, MAX_QUOTA, MIN_QUOTA, VENUE_ID,
+            ACTIVITY_CATALOGUE_ID)
+VALUES
+  (
+    NEXTVAL('ACTIVITY_SEQ'),
+    2022,
+    2,
+    'i',
+    '13:00',
+    '15:00',
+    'Los días 5, 7, 9 y 10 de Agosto',
+    'LIVS',
+    80,
+    200.00,
+    15,
+    5,
+    1,
+    24
+  );
+
+INSERT INTO
+  ACTIVITY (ACTIVITY_ID, YEAR, NUM, TYPE, START_TIME, END_TIME, MANUAL_DATE,
+            DAYS_WEEK, CTC, COST, MAX_QUOTA, MIN_QUOTA, VENUE_ID,
+            ACTIVITY_CATALOGUE_ID)
+VALUES
+  (
+    NEXTVAL('ACTIVITY_SEQ'),
+    2023,
+    2,
+    'i',
+    '13:00',
+    '15:00',
+    'Los días 5, 7, 9 y 10 de Agosto',
+    'LIVS',
+    80,
+    200.00,
+    15,
+    5,
+    1,
+    24
+  );
+
+-- ACTIVITY CATALOGUE ID: 25
+INSERT INTO
+  ACTIVITY (ACTIVITY_ID, YEAR, NUM, TYPE, START_TIME, END_TIME, MANUAL_DATE,
+            DAYS_WEEK, CTC, COST, MAX_QUOTA, MIN_QUOTA, VENUE_ID,
+            ACTIVITY_CATALOGUE_ID)
+VALUES
+  (
+    NEXTVAL('ACTIVITY_SEQ'),
+    2022,
+    2,
+    'i',
+    '13:00',
+    '15:00',
+    'Los días 5, 7, 9 y 10 de Agosto',
+    'LIVS',
+    80,
+    200.00,
+    15,
+    5,
+    1,
+    25
+  );
+
+INSERT INTO
+  ACTIVITY (ACTIVITY_ID, YEAR, NUM, TYPE, START_TIME, END_TIME, MANUAL_DATE,
+            DAYS_WEEK, CTC, COST, MAX_QUOTA, MIN_QUOTA, VENUE_ID,
+            ACTIVITY_CATALOGUE_ID)
+VALUES
+  (
+    NEXTVAL('ACTIVITY_SEQ'),
+    2023,
+    2,
+    'i',
+    '13:00',
+    '15:00',
+    'Los días 5, 7, 9 y 10 de Agosto',
+    'LIVS',
+    80,
+    200.00,
+    15,
+    5,
+    1,
+    25
+  );
