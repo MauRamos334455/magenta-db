@@ -5,7 +5,7 @@ a = ['50', '60', '80', '95', '100']
 
 print("Creando archivo...")
 
-f = open("activity-evaluations.sql", "wt")
+f = open("instructor-evaluations.sql", "wt")
 
 
 print("Conectando con BD....")
