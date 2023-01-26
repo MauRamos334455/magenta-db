@@ -4,7 +4,7 @@ INSERT INTO DIPLOMA (DIPLOMA_ID, NAME)
 VALUES
   (
     NEXTVAL('DIPLOMA_SEQ'),
-    'Diplomado en Sistemas Operativos'
+    'Diplomado en Bases de Datos'
   );
 
 INSERT INTO DIPLOMA (DIPLOMA_ID, NAME)
