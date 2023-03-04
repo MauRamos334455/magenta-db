@@ -292,7 +292,7 @@ INSERT INTO
 VALUES
   (
     NEXTVAL('ACTIVITY_CATALOGUE_SEQ'),
-    'DIDCT178',
+    'DIDCT623',
     'Introducción a las bases de datos relacionales.',
     8,
     'DI',
@@ -308,7 +308,7 @@ INSERT INTO
 VALUES
   (
     NEXTVAL('ACTIVITY_CATALOGUE_SEQ'),
-    'DIDCT178',
+    'DIDCT511',
     'Diseño de bases de datos relacionales con MariaDB.',
     8,
     'DI',
@@ -324,7 +324,7 @@ INSERT INTO
 VALUES
   (
     NEXTVAL('ACTIVITY_CATALOGUE_SEQ'),
-    'DIDCT178',
+    'DIDCT409',
     'Administración de bases de datos relacionales con MariaDB',
     8,
     'DI',
@@ -340,7 +340,7 @@ INSERT INTO
 VALUES
   (
     NEXTVAL('ACTIVITY_CATALOGUE_SEQ'),
-    'DIDCT178',
+    'DIDCT309',
     'Diseño de bases de datos relacionales distribuidas con diversos RDBMS',
     8,
     'DI',
@@ -356,7 +356,7 @@ INSERT INTO
 VALUES
   (
     NEXTVAL('ACTIVITY_CATALOGUE_SEQ'),
-    'DIDCT178',
+    'DIDCT209',
     'Estrategias de mantenimiento para bases de datos relacionales.',
     8,
     'DI',
