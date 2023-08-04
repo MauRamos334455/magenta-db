@@ -26,7 +26,7 @@ VALUES
     'Ing.',
     'F',
     'mantenimiento_ck',
-    crypt('M4NT3N1M13NT0#', gen_salt('bf')),
+    crypt('M4NT3N1M13NT0#', gen_salt('bf'))
     true
   );
 
