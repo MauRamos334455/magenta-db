@@ -11,7 +11,9 @@ docker rm ${container}
 
 Write-Output "Creating our container..."
 # Execute script inside scripts folder or change $PWD
-docker run -e POSTGRES_PASSWORD=${pg_password} -d --name ${container} -p ${host_port}:${container_port} -v ${PWD}/../source:/tmp/source postgres:latest
+docker run -e POSTGRES_PASSWORD=${pg_password} -d --name ${container} `
+  -p ${host_port}:${container_port} `
+  -v ${PWD}/../source:/tmp/source postgres:latest
 
 Write-Output "Starting container..."
 docker start ${container}

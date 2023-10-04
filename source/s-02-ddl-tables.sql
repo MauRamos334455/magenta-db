@@ -381,7 +381,7 @@ CREATE TABLE ADMINISTRATOR(
     GENDER               CHAR(1),
     USERNAME             VARCHAR(40)     NOT NULL,
     PASSWORD             VARCHAR(60)     NOT NULL,
-    ROLE                  CHAR(1)         NOT NULL,
+    ROLE                  CHAR(1)        NOT NULL,
     DEPARTMENT_ID        NUMERIC(10, 0)  NOT NULL,
 
     CONSTRAINT ADMINISTRATOR_PK PRIMARY KEY (ADMINISTRATOR_ID),
