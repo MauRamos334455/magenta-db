@@ -1,4 +1,4 @@
-$container = "magestic-db"
+$container = "magenta-db"
 $pg_password = "postgres"
 $host_port = 5432
 $container_port = 5432

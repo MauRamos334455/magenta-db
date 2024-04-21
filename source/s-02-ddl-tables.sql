@@ -1,7 +1,7 @@
 --
 -- ER/Studio 8.0 SQL Code Generation
 -- Company :      UNAM
--- Project :      magesticd
+-- Project :      magenta
 -- Author :       C. Mauricio Ramos V.,
 --                Carolina Kennedy V.
 --
