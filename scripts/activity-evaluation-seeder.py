@@ -24,9 +24,9 @@ f = open("activity-evaluations.sql", "wt")
 print("Conectando con BD....")
 
 conn = psycopg2.connect(
-  database = "magestic",
-  user = 'magestic',
-  password = 'magestic',
+  database = "magenta",
+  user = 'magenta',
+  password = 'magenta',
   host = '127.0.0.1',
   port = 5432
 )

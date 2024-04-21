@@ -1,6 +1,6 @@
 --
 -- Company :      UNAM
--- Project :      MagestiCD
+-- Project :      Magenta
 -- Author :       C. Mauricio Ramos V.,
 --                Carolina Kennedy V.
 --

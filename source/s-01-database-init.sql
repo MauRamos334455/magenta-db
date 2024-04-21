@@ -1,7 +1,7 @@
 --
 -- ER/Studio 8.0 SQL Code Generation
 -- Company :      UNAM
--- Project :      magesticd
+-- Project :      magenta
 -- Author :       C. Mauricio Ramos V.,
 --                Carolina Kennedy V.
 --
@@ -12,12 +12,12 @@
 --
 
 -- With postgres user
-create user magestic with encrypted password 'magestic';
-create database magestic with owner magestic encoding 'UTF8';
-grant all privileges on database magestic to magestic;
+create user magenta with encrypted password 'magenta';
+create database magenta with owner magenta encoding 'UTF8';
+grant all privileges on database magenta to magenta;
 
 -- Change user for next scripts
-\c magestic magestic
+\c magenta magenta
 
 -- Create extra extensions for libraries
 create extension unaccent;

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CONTAINER="magestic-db"
+CONTAINER="magenta-db"
 PG_PASSWORD="postgres"
 HOST_PORT="5432"
 CONTAINER_PORT="5432"
@@ -22,5 +22,5 @@ sleep 3
 echo Executing container...
 docker exec -it -u postgres -w /tmp/source ${CONTAINER} psql
 
-# Don't forget to change user to magestic on psql if is not your first time
-# \c magestic magestic
+# Don't forget to change user to magenta on psql if is not your first time
+# \c magenta magenta
