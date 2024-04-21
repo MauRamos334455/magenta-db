@@ -7,24 +7,24 @@ Database architecture for the
 ## Dependencies
 * [Docker]()
 ## Installation
-### Execute the init Docker script 
+### Execute the init Docker script in main folder
 For PowerShell:
 ```shell
-magenta-db/scripts/docker-init.ps1
+./scripts/docker-init.ps1
 ```
 
 Make sure you can run scripts in PowerShell.
 
 For bash:
 ```shell
-magenta-db/scripts/docker-init.sh
+./scripts/docker-init.sh
 ```
 
 Also you can instead of use Docker install a native PostgreSQL 14 server.
 
 Once in PSQL shell execute:
 ```shell
-\i magenta-db/source/s-00-main.sql
+\i s-00-main.sql
 ```
 
 Continue with the setup of the [Magenta](https://github.com/MauRamos334455/magenta) system.
