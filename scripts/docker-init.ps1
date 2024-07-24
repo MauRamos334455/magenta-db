@@ -2,6 +2,10 @@ $container = "magenta-db"
 $pg_password = "postgres"
 $host_port = 5432
 $container_port = 5432
+$network = "magenta-network"
+
+Write-Output "Creating docker network..."
+docker network create ${network}
 
 Write-Output "Stopping the container..."
 docker stop ${container}
@@ -9,9 +13,14 @@ docker stop ${container}
 Write-Output "Deleting previous container..."
 docker rm ${container}
 
-Write-Output "Creating our container..."
+Write-Output "Creating new container..."
 # Execute script inside scripts folder or change $PWD
-docker run -e POSTGRES_PASSWORD=${pg_password} -d --name ${container} `
+docker run `
+  -e POSTGRES_PASSWORD=${pg_password} `
+  -e POSTGRES_HOST_AUTH_METHOD=md5 `
+  -d `
+  --name ${container} `
+  --network ${network} `
   -p ${host_port}:${container_port} `
   -v ${PWD}/source:/tmp/source postgres:latest
 
